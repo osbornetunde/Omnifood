@@ -6,42 +6,45 @@
     <title>Document</title>
     <link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="vendors/css/Grid.css">
+    <link rel="stylesheet" href="vendors/css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="resources/css/style.css">
      <link rel="stylesheet" href="resources/css/queries.css">
     <link href="https://unpkg.com/ionicons@4.1.2/dist/css/ionicons.min.css" rel="stylesheet">
+
 </head>
 <body>
       <header>
          <nav>
              <div class="row">
                  <img src="resources/img/logo-white.png" alt="omnifood logo" class="logo">
-                 <ul class="main-nav">
-                     <li><a href="#">Food delivery</a>
+                 <img src="resources/img/logo.png" alt="omnifood logo" class="logo-black">
+                 <ul class="main-nav js-main-nav">
+                     <li><a href="#features">Food delivery</a>
                      </li>
-                     <li><a href="#">own it works</a>
+                     <li><a href="#works">How it works</a>
                      </li>
-                     <li><a href="#">Our cities</a>
+                     <li><a href="#cities">Our cities</a>
                      </li>
-                     <li><a href="#">Sign Up</a></li>
-
+                     <li><a href="#sign">Sign Up</a></li>
                  </ul>
+                 <a class="mobile-nav-icon js-nav-icon"><ion-icon name="menu"></ion-icon></a>
              </div>
          </nav>
           <div class="hero-text-box">
               <h1>Goodbye junk food.<br>Hello super healthy meals </h1>
-              <a class="btn btn-full" href="#">I'm hungry</a>
-              <a class="btn btn-ghost" href="#">Show me more</a>
+              <a class="btn btn-full js-scroll-to-plan" href="#">I'm hungry</a>
+              <a class="btn btn-ghost js-scroll-to-start" href="#">Show me more</a>
           </div>
       </header>
-      <section class="section-features">
+      <section class="section-features js-section-features" id="features">
           <div class="row">
               <h2>Get food fast &mdash; not fast food</h2>
               <p class="long-copy">
                   Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
               </p>
           </div>
-          <div class="row">
+          <div class="row js-wp-1">
               <div class="col span-1-of-4 box">
                  <ion-icon name="infinite" class="icon-big"></ion-icon>
                   <h3>Up to 365 days/year</h3>
@@ -120,13 +123,13 @@
 
       </section>
 
-      <section class="section-steps">
+      <section class="section-steps" id="works">
           <div class="row">
               <h2>How it works &mdash; Simple as 1, 2, 3</h2>
           </div>
           <div class="row">
               <div class="col span-1-of-2 steps-box">
-                  <img src="resources/img/phone.png" alt="omnifood app on iphone" class="app-screen">
+                  <img src="resources/img/phone.png" alt="omnifood app on iphone" class="app-screen js-wp-2">
               </div>
               <div class="col span-1-of-2 steps-box">
                   <div class="works-step">
@@ -147,11 +150,11 @@
           </div>
       </section>
 
-      <section class="section-cities">
+      <section class="section-cities" id="cities">
           <div class="row">
               <h2> We're currently in these cities</h2>
           </div>
-          <div class="row">
+          <div class="row js-wp-3">
               <div class="col span-1-of-4 box">
                  <img src="resources/img/lisbon-3.jpg" alt="lisbon">
                  <h3>LISBON</h3>
@@ -245,13 +248,13 @@
       </section>
 
 
-      <section class="section-plans">
+      <section class="section-plans js-section-plans" id="sign">
           <div class="row">
               <h2>Start eating healthy today</h2>
           </div>
           <div class="row">
               <div class="col span-1-of-3">
-                  <div class="plan-box">
+                  <div class="plan-box js-wp-4">
                       <div>
                           <h3>Premium</h3>
                           <p class="plan-price">$399<span> / month</span></p>
@@ -259,7 +262,7 @@
                       </div>
                       <div>
                          <ul>
-                              <li><ion-icon name="checkmark" class="icon-small"></ion-icon>1 meal everyday</li>
+                              <li><ion-icon name="checkmark" class="icon-small"></ion-icon> 1 meal everyday</li>
                               <li><ion-icon name="checkmark" class="icon-small"></ion-icon> Order 24/7</li>
                               <li><ion-icon name="checkmark" class="icon-small"></ion-icon> Access to newest creations</li>
                               <li><ion-icon name="checkmark" class="icon-small"></ion-icon> Free delivery</li>
@@ -279,7 +282,7 @@
                       </div>
                       <div>
                          <ul>
-                              <li><ion-icon name="checkmark" class="icon-small"></ion-icon>1 meal 10 days/month</li>
+                              <li><ion-icon name="checkmark" class="icon-small"></ion-icon> 1 meal 10 days/month</li>
                               <li><ion-icon name="checkmark" class="icon-small"></ion-icon> Order 24/7</li>
                               <li><ion-icon name="checkmark" class="icon-small"></ion-icon> Access to newest creations</li>
                               <li><ion-icon name="checkmark" class="icon-small"></ion-icon> Free delivery</li>
@@ -299,7 +302,7 @@
                       </div>
                       <div>
                          <ul>
-                              <li><ion-icon name="checkmark" class="icon-small"></ion-icon>1 meal</li>
+                              <li><ion-icon name="checkmark" class="icon-small"></ion-icon> 1 meal</li>
                               <li><ion-icon name="checkmark" class="icon-small"></ion-icon> Order from 8 am to 12 pm</li>
                               <li><ion-icon name="checkmark" class="icon-small">
                               <li><ion-icon name="checkmark" class="icon-small"></ion-icon> Free delivery</li>
@@ -403,66 +406,15 @@
           </div>
       </footer>
       <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="vendors/js/jquery.waypoints.min.js"></script>
+<script src="resources/js/script.js"></script>
 </body>
 </html>
-
-
-
-
-
-<!--
-Section 7: Contact form
-Title: We're happy to hear from you
-
-Fields to include:
-Name
-Email
-How did you find us?
-Newsletter
-Drop us a line
-
-Section 8: Footer
-Title: None
-
-Navigation:
-1. About us
-2. Blog
-3. Press
-4. iOS App
-5. Android App
-
-Also include links to facebook, twitter, google+ and Instagram accounts.
--->
-
-<!--
-Section 6: Sign up and pricing plans
-Title: Start eating healthy today
-
-Plan 1: Premium
-399$ per month
-That’s only 13.30$ per meal
-1 meal every day
-Order 24/7
-Access to newest creations
-Free delivery
-
-
-Plan 2: Pro
-149$ per month
-That’s only 14.90$ per meal
-1 meal 10 days/month
-Order 24/7
-Access to newest creations
-Free delivery
-
-
-Plan 3: Starter
-19$ per meal
-1 meal
-Order from 8 am to 12 pm
-Free delivery
--->
-
 
 
 
