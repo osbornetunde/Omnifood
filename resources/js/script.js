@@ -88,18 +88,36 @@ $('a[href*="#"]')
     /*Mobile nav*/
     $('.js-nav-icon').click(function(){
         var nav = $('.js-main-nav');
-        var icon = $('.js-nav-icon');
+        var icon = $('.js-nav-icon ion-icon');
 
         nav.slideToggle(200);
-        if (icon.has('menu')){
-            icon.add('close');
-            icon.remove('menu');
+        if (icon.hasClass('mobile-nav-icon')){
+            icon.addClass('mobile-nav-icon-close').attr('name','close');
+            icon.removeClass('mobile-nav-icon');
         } else{
-            icon.add('menu');
-            icon.remove('close');
+            icon.addClass('mobile-nav-icon').attr('name','menu');
+            icon.removeClass('mobile-nav-icon-close');
         }
 
 
     });
 
 });
+
+
+jQuery
+
+// Mobile nav
+// $(".js--nav-icon").click(function() {
+// var nav = $(".js--main-nav");
+// var icon = $(".js--nav-icon ion-icon");
+// nav.slideToggle(200);
+// if (icon.hasClass("mobile-nav-icon")) {
+// icon.addClass("mobile-nav-icon-close").attr("name", "close");
+// icon.removeClass("mobile-nav-icon");
+// } else {
+// icon.addClass("mobile-nav-icon").attr("name", "menu");
+// icon.removeClass("mobile-nav-icon-close");
+// }
+// });
+
