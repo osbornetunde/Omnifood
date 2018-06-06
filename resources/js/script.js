@@ -102,22 +102,23 @@ $('a[href*="#"]')
 
     });
 
+
+/*-----Map------*/
+
+    var map = new GMaps({
+      div: '.map',
+      lat: 6.604062,
+      lng: 3.29,
+        zoom: 16
+    });
+
+    map.addMarker({
+      lat: 6.604062,
+      lng: 3.278902,
+      title: 'Lagos',
+        infoWindow: {
+              content: '<p>Our Lagos Headquarter</p>'
+            }
 });
 
-
-jQuery
-
-// Mobile nav
-// $(".js--nav-icon").click(function() {
-// var nav = $(".js--main-nav");
-// var icon = $(".js--nav-icon ion-icon");
-// nav.slideToggle(200);
-// if (icon.hasClass("mobile-nav-icon")) {
-// icon.addClass("mobile-nav-icon-close").attr("name", "close");
-// icon.removeClass("mobile-nav-icon");
-// } else {
-// icon.addClass("mobile-nav-icon").attr("name", "menu");
-// icon.removeClass("mobile-nav-icon-close");
-// }
-// });
-
+});
